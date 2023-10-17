@@ -17,8 +17,17 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    const bench_test = b.addExecutable(.{
+        .name = "bench",
+        .root_source_file = .{ .path = "src/bench.zig" },
+        .target = target,
+        .optimize = optimize,
+    });
+
     b.installArtifact(lib);
 
     const test_step = b.step("test", "Run library tests");
     test_step.dependOn(&b.addRunArtifact(main_tests).step);
+    const bench_step = b.step("bench", "Run the benchmark test");
+    bench_step.dependOn(&b.addRunArtifact(bench_test).step);
 }
