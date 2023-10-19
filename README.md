@@ -4,8 +4,8 @@ Rotkeappchen is a design proposal for a [captcha](https://en.wikipedia.org/wiki/
 system that does not require keeping track of challenges and can run completely
 independent of a database.
 
-_This library includes methods for further processing and generating a visual
-captcha challenge._
+_This library does not include methods for further processing and generating visual
+captcha challenges. Instead I suggest you take a look at this [repository](https://github.com/DISTREAT/captcha-generator)._
 
 _Note: Build using zig version 0.11.0._
 
@@ -99,8 +99,6 @@ Generating random gibberish is one thing, but the next step is serving it in a u
 The returned digest could theoretically be used for any captcha challenge design.
 Therefore, the challenge design (ex. enter numbers seen in picture, slide to match pieces) determines whether
 it is good at recognizing bots or not. And because technologies get better, we will need to find alternative solutions eventually.
-
-The library provides a simple example module for generating SVGs of noisy text.
 
 ### Example integration
 
