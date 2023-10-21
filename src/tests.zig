@@ -48,3 +48,11 @@ test "Realistic tests" {
         try expect(rk.verify(options, "a", &digest));
     }
 }
+
+test "Expiration of digests" {
+    const options = rk.GenerationOptions{ .shared_secret = "secret", .expire_eta = 1 };
+
+    const digest = rk.generate(options, 0, "request 1");
+    std.time.sleep(3 * 1000000000);
+    try expect(!rk.verify(options, "request 1", &digest));
+}
