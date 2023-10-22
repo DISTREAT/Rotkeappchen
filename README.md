@@ -4,9 +4,12 @@ Rotkeappchen is a design proposal for a [captcha](https://en.wikipedia.org/wiki/
 system that does not require keeping track of challenges and can run completely
 independent of a database.
 
-_This library does not include methods for further processing and generating visual
-captcha challenges. Instead, I suggest you take a look at my other
-[repository](https://github.com/DISTREAT/captcha-generator)._
+This library does not include methods for further processing and generating visual
+captcha challenges. Instead, I suggest you take a look at my other repositories:
+- [CAPTCHA-System](https://github.com/DISTREAT/captcha-system):
+Fully-fledged implementation of Rotkeappchen including CAPTCHA challenge generation.
+- [CAPTCHA-Generator](https://github.com/DISTREAT/captcha-generator):
+Bun-compatible typescript library for generating CAPTCHA challenges using ImageMagick.
 
 _Note: Build using Zig version 0.11.0._
 
