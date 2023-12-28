@@ -1,11 +1,15 @@
 # Rotkeappchen - Rotating Captcha
 
-Rotkeappchen is a design proposal for a [captcha](https://en.wikipedia.org/wiki/CAPTCHA)
-system that does not require keeping track of challenges and can run completely
-independent of a database.
+Rotkeappchen is a design proposal for a stateless [captcha](https://en.wikipedia.org/wiki/CAPTCHA)
+system that does not require keeping track of challenges and can run independently of a database.
 
-This library does not include methods for further processing and generating visual
-captcha challenges. Instead, I suggest you take a look at my other repositories:
+The proposed design may also apply to email verification and other related tasks that
+require verifying requests.
+
+This repository contains a PoC zig library that does not include methods for further
+processing and generating visual captcha challenges.
+Instead, I suggest you take a look at my other repositories:
+
 - [CAPTCHA-System](https://github.com/DISTREAT/captcha-system):
 Fully-fledged implementation of Rotkeappchen including CAPTCHA challenge generation.
 - [CAPTCHA-Generator](https://github.com/DISTREAT/captcha-generator):
