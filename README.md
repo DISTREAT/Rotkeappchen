@@ -14,6 +14,8 @@ Instead, I suggest you take a look at my other repositories:
 Fully-fledged implementation of Rotkeappchen including CAPTCHA challenge generation.
 - [CAPTCHA-Generator](https://github.com/DISTREAT/captcha-generator):
 Bun-compatible typescript library for generating CAPTCHA challenges using ImageMagick.
+- [Rotkeappchen-rs](https://github.com/DISTREAT/rotkeappchen-rs):
+Rust implementation of the Rotkeappchen algorithm.
 
 _Note: Build using Zig version 0.11.0._
 
