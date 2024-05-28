@@ -1,4 +1,4 @@
-# Rotkeappchen - Rotating Captcha
+# Rotkeappchen - Dynamic Secrets
 
 Rotkeappchen is a design proposal for a stateless, DB-less, secure, and failsafe
 method for generating and verifying [Dynamic Secret](https://en.wikipedia.org/wiki/Dynamic_secrets)
